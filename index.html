@@ -1,398 +1,1283 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-<meta charset="UTF-8">
-<title>REDDY</title>
+<div id="reddy-page">
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '961139869585944');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=961139869585944&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<style>
+/* =====================================================
+   REDDY PREMIUM LUXURY LANDING PAGE
+   WORDPRESS / ELEMENTOR CUSTOM HTML
+===================================================== */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MH ONLINE | Premium App</title>
-    <!-- Google Fonts for Premium Look -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        /* ========================================================
-           PREMIUM MASTER CSS DEFINITION
-           ======================================================== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: #6A1B9A; /* Rich deep canvas backdrop */
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px 0;
-        }
-
-        /* Strict Mobile Frame with Ultimate Radial Depth */
-        .page-wrapper {
-            width: 100%;
-            max-width: 440px;
-            /* Multi-layered rich premium teal aura matching Image 1000251388.jpg */
-            background: #6A1B9A;
-            margin: 0 auto;
-            min-height: 96vh;
-            padding: 35px 24px 45px 24px;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 35px 80px rgba(0, 0, 0, 0.85), inset 0 1px 4px rgba(255, 255, 255, 0.25);
-            border-radius: 36px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        /* Luxury Top Floating Timer Badge */
-        .top-timer-banner {
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 50px;
-            padding: 10px 24px;
-            font-size: 11px;
-            font-weight: 600;
-            color: #ffffff;
-            display: inline-block;
-            margin-bottom: 25px;
-            letter-spacing: 0.8px;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-        .top-timer-banner span {
-            color: #fff500; /* Sharp vivid yellow indicator */
-            font-weight: 700;
-            margin-left: 6px;
-            text-shadow: 0 0 8px rgba(255, 245, 0, 0.4);
-        }
-
-        /* Glossy Fire Capsule Hottest App Status Badge */
-        .hot-badge {
-            background: linear-gradient(135deg, #ff3366 0%, #ff5e3a 100%); /* Rich premium coral fire */
-            color: #ffffff;
-            font-size: 10px;
-            font-weight: 800;
-            text-transform: uppercase;
-            padding: 9px 26px;
-            border-radius: 50px;
-            display: inline-block;
-            letter-spacing: 1.8px;
-            margin-bottom: 35px;
-            box-shadow: 0 10px 25px rgba(255, 51, 102, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        /* 3D Floating App Squircle Container (Pop-out Premium Look) */
-        .logo-squircle {
-            width: 145px;
-            height: 145px;
-            background: #ffffff;
-            border-radius: 38px; /* Smooth professional iOS style corners */
-            margin: 0 auto 35px auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 20px 45px rgba(0, 38, 33, 0.45), 0 5px 15px rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            border: 3px solid rgba(255, 255, 255, 0.95);
-            position: relative;
-        }
-        .logo-squircle .main-g {
-            font-size: 38px;
-            font-weight: 800;
-            color: #00897b; /* Bold App Teal Color */
-            line-height: 1;
-            letter-spacing: -0.5px;
-        }
-        .logo-squircle .sub-text {
-            font-size: 11px;
-            font-weight: 700;
-            color: #3a4454;
-            letter-spacing: 1px;
-            margin-top: 6px;
-            text-transform: uppercase;
-        }
-
-        /* Professional Typography Group */
-        h1 {
-            font-size: 34px;
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 4px;
-            letter-spacing: -0.5px;
-            text-shadow: 0 3px 12px rgba(0,0,0,0.2);
-        }
-
-        .app-category {
-            font-size: 14px;
-            color: #b2f5ea;
-            font-weight: 700;
-            margin-bottom: 24px;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-        }
-
-        .main-description {
-            font-size: 13.5px;
-            color: #f0fbf9;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            padding: 0 8px;
-            font-weight: 400;
-        }
-
-        /* Ultimate High-Gloss Metallic Chrome Download CTA Button (No Animation) */
-        .btn-download-now {
-            display: block;
-            width: 100%;
-            background: linear-gradient(180deg, #ffffff 0%, #edf5f4 60%, #d2ece7 100%); /* Silver-White Chrome Gradient */
-            color: #005e52; /* Deep solid crisp teal font for elite readability */
-            text-decoration: none;
-            padding: 19px;
-            font-size: 17px;
-            font-weight: 800;
-            border-radius: 50px; /* Clean pill shape */
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), inset 0 2px 4px #ffffff;
-            margin-bottom: 35px;
-            border: 1px solid rgba(255, 255, 255, 0.8);
-            transition: all 0.2s ease-in-out;
-        }
-        .btn-download-now:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 22px 45px rgba(0, 0, 0, 0.4);
-            background: #ffffff;
-        }
-
-        /* Trust Features Matrix (Elite High-Glass Frosted Look) */
-        .features-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            margin-bottom: 35px;
-        }
-
-        .feature-card {
-            background: rgba(255, 255, 255, 0.09); /* Soft reflective frosted panel */
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            border-radius: 24px;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            text-align: left;
-            gap: 18px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        .card-icon {
-            font-size: 22px;
-            width: 50px;
-            height: 50px;
-            background: #ffffff;
-            color: #00897b;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-        }
-
-        .card-content h4 {
-            font-size: 14.5px;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 4px;
-            letter-spacing: 0.3px;
-        }
-
-        .card-content p {
-            font-size: 12.5px;
-            color: #cff5ef;
-            line-height: 1.5;
-        }
-
-        /* Security Verification Indicators Strip */
-        .badge-strip {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-            font-size: 11px;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 35px;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            opacity: 0.9;
-        }
-
-        /* Minimalist Editorial Branding Footer */
-        .footer-credit {
-            font-size: 10px;
-            color: #8be0d4;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 600;
-            margin-top: 15px;
-            opacity: 0.75;
-        }
-        
-        .app-logo {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 25px auto 15px auto;
-    border: 4px solid #ffffff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    background: #fff;
+#reddy-page,
+#reddy-page *{
+    box-sizing:border-box;
 }
-    </style>
-</head>
-<body>
 
-    <!-- ========================================================
-       PREMIUM STRUCTURE MODULE (HTML)
-       ======================================================== */ -->
-    <div class="page-wrapper">
+html,
+body{
+    margin:0 !important;
+    padding:0 !important;
+}
 
-        <!-- Top Static Countdown (Strictly No Auto-Redirect) -->
-        <div class="top-timer-banner">
-            Download Link Securing In <span id="reg-timer">00:30</span>
-        </div>
-        <br>
-        
-        <!-- Hottest Status Pin -->
-        <div class="hot-badge">
-            🔥 Hottest New App
-        </div>
-<img src="p.jpg" alt="App Logo" class="app-logo">
-        <!-- Typography Clusters -->
-        <h1>REDDY</h1>
-        <div class="app-category">Premium Entertainment App</div>
-        <p class="main-description">
-            Download the official REDDY Android App for fast results, real cash prizes, and a premium Entertainment experience.
-        </p>
+#reddy-page{
+    --green:#19e58b;
+    --green-dark:#078b52;
+    --green-light:#6df3b5;
+    --bg:#040706;
+    --card:#0b100e;
+    --text:#ffffff;
+    --muted:#98a19c;
 
-        <!-- Primary High-Contrast CTA Trigger Block -->
-        <!-- "href" me apna app download link enter karein -->
-        <a href="https://apegency.online/re/rdyy.apk" class="btn-download-now">
-            ↓ Download Now
-        </a>
+    width:100vw !important;
+    max-width:none !important;
 
-        <!-- Features Frosted Cards Matrix Section -->
-        <div class="features-stack">
-            
-            <!-- Card Item 1 -->
-            <div class="feature-card">
-                <div class="card-icon">⚡</div>
-                <div class="card-content">
-                    <h4>Fast Results & Withdrawals</h4>
-                    <p>Instant updates and quick cash-outs without delay.</p>
-                </div>
-            </div>
+    margin-left:calc(50% - 50vw) !important;
+    margin-right:calc(50% - 50vw) !important;
 
-            <!-- Card Item 2 -->
-            <div class="feature-card">
-                <div class="card-icon">🔒</div>
-                <div class="card-content">
-                    <h4>Secure & Certified App</h4>
-                    <p>Your personal data and funds are fully protected.</p>
-                </div>
-            </div>
+    min-height:100vh;
 
-            <!-- Card Item 3 -->
-            <div class="feature-card">
-                <div class="card-icon">📱</div>
-                <div class="card-content">
-                    <h4>Mobile Optimized & Smooth</h4>
-                    <p>Optimized for all Android devices for lag-free play.</p>
-                </div>
-            </div>
+    background:
+        radial-gradient(
+            circle at 50% -10%,
+            rgba(15,137,82,.40),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 90% 25%,
+            rgba(10,85,58,.25),
+            transparent 30%
+        ),
+        #040706;
 
-            <!-- Card Item 4 -->
-            <div class="feature-card">
-                <div class="card-icon">💰</div>
-                <div class="card-content">
-                    <h4>Ultimate Entertainment Hub</h4>
-                    <p>Exclusive games, rewards, and high-value bonuses.</p>
-                </div>
-            </div>
+    color:var(--text);
 
-        </div>
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
 
-        <!-- Security Compliance Indicator Row -->
-        <div class="badge-strip">
-            <span>✓ Official REDDY APK</span>
-            <span>•</span>
-            <span>✓ Safe & Secure</span>
-        </div>
+    overflow:hidden;
+}
 
-        <!-- Secondary End Action Block -->
-        <a href="https://apegency.online/re/rdyy.apk" class="btn-download-now">
-            ↓ Download Now
-        </a>
+/* =====================================================
+   NAVIGATION
+===================================================== */
 
-        <!-- Footer Signature Section -->
+#reddy-page .rp-nav{
+    width:100%;
+    height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 6%;
+
+    background:rgba(4,7,6,.88);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    position:relative;
+    z-index:20;
+}
+
+#reddy-page .rp-brand{
+    display:flex;
+    align-items:center;
+    gap:9px;
+
+    font-size:22px;
+    font-weight:900;
+
+    letter-spacing:3px;
+}
+
+#reddy-page .rp-brand-r{
+    color:var(--green);
+}
+
+#reddy-page .rp-nav-download{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    padding:10px 19px;
+
+    border-radius:30px;
+
+    background:
+        rgba(25,229,139,.08);
+
+    border:
+        1px solid rgba(25,229,139,.5);
+
+    font-size:12px;
+    font-weight:800;
+
+    transition:.25s;
+}
+
+#reddy-page .rp-nav-download:hover{
+    background:var(--green);
+    color:#03150d;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+#reddy-page .rp-hero{
+    width:100%;
+    max-width:1150px;
+
+    margin:auto;
+
+    padding:70px 25px 65px;
+
+    display:grid;
+
+    grid-template-columns:
+        1.08fr .92fr;
+
+    align-items:center;
+
+    gap:60px;
+}
+
+#reddy-page .rp-badge{
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:9px 15px;
+
+    border-radius:30px;
+
+    color:var(--green-light);
+
+    background:
+        rgba(25,229,139,.07);
+
+    border:
+        1px solid rgba(25,229,139,.30);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    letter-spacing:1.5px;
+}
+
+#reddy-page .rp-title{
+    margin:21px 0 16px;
+
+    font-size:64px;
+
+    line-height:1;
+
+    letter-spacing:-3px;
+
+    font-weight:900;
+}
+
+#reddy-page .rp-title span{
+    background:
+        linear-gradient(
+            120deg,
+            #ffffff,
+            #6df3b5,
+            #08c873
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+}
+
+#reddy-page .rp-description{
+    max-width:580px;
+
+    color:var(--muted);
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    text-align:left;
+}
+
+/* =====================================================
+   PREMIUM DOWNLOAD BUTTON
+===================================================== */
+
+#reddy-page .rp-download{
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    width:min(450px,100%);
+
+    min-height:70px;
+
+    margin-top:30px;
+
+    padding:12px 25px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2af49b 0%,
+            #0bc875 48%,
+            #057b47 100%
+        );
+
+    border:
+        1px solid rgba(145,255,207,.80);
+
+    box-shadow:
+        0 13px 42px rgba(0,210,120,.32),
+        0 0 35px rgba(0,210,120,.12),
+        inset 0 1px rgba(255,255,255,.40);
+
+    overflow:hidden;
+
+    animation:
+        rpPulse 2s infinite;
+
+    cursor:pointer;
+}
+
+#reddy-page .rp-download::after{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-70%;
+
+    width:45%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.80),
+            transparent
+        );
+
+    transform:skewX(-25deg);
+
+    animation:
+        rpShine 2.3s infinite;
+}
+
+#reddy-page .rp-arrow{
+    position:relative;
+
+    z-index:2;
+
+    font-size:31px;
+
+    animation:
+        rpArrow 1.15s infinite;
+}
+
+#reddy-page .rp-button-text{
+    position:relative;
+
+    z-index:2;
+
+    text-align:left;
+
+    font-size:18px;
+
+    font-weight:900;
+}
+
+#reddy-page .rp-button-text small{
+    display:block;
+
+    margin-top:3px;
+
+    font-size:9px;
+
+    letter-spacing:1.2px;
+
+    opacity:.78;
+}
+
+@keyframes rpShine{
+
+    0%{
+        left:-70%;
+    }
+
+    45%,
+    100%{
+        left:130%;
+    }
+
+}
+
+@keyframes rpArrow{
+
+    0%,
+    100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(6px);
+    }
+
+}
+
+@keyframes rpPulse{
+
+    0%,
+    100%{
+        box-shadow:
+            0 13px 42px rgba(0,210,120,.28),
+            0 0 0 0 rgba(25,229,139,.28);
+    }
+
+    50%{
+        box-shadow:
+            0 18px 55px rgba(0,210,120,.45),
+            0 0 0 10px rgba(25,229,139,0);
+    }
+
+}
+
+/* =====================================================
+   CSS REDDY LOGO
+===================================================== */
+
+#reddy-page .rp-logo-area{
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+#reddy-page .rp-logo-glow{
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    border-radius:50%;
+
+    background:#09d57b;
+
+    filter:blur(85px);
+
+    opacity:.16;
+}
+
+#reddy-page .rp-logo{
+    position:relative;
+
+    width:190px;
+    height:190px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #3b2175 0%,
+            #1b0d3b 62%,
+            #090514 100%
+        );
+
+    border:
+        7px solid #18dce7;
+
+    box-shadow:
+        0 0 0 4px #ffffff,
+        0 0 0 8px #167ee8,
+        0 0 50px rgba(24,220,231,.35),
+        0 30px 75px rgba(0,0,0,.75);
+
+    animation:
+        rpLogoFloat 4s ease-in-out infinite;
+}
+
+#reddy-page .rp-logo::before{
+    content:"";
+
+    position:absolute;
+
+    width:110px;
+    height:70px;
+
+    top:28px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #09c9ed,
+            #1768ee
+        );
+
+    z-index:1;
+}
+
+#reddy-page .rp-logo-r{
+    position:relative;
+
+    z-index:2;
+
+    height:85px;
+
+    margin-top:-18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-family:Arial,sans-serif;
+
+    font-size:92px;
+
+    line-height:1;
+
+    font-weight:1000;
+
+    color:#ffe900;
+
+    text-shadow:
+        4px 5px 0 #c9a600,
+        0 8px 18px rgba(0,0,0,.55);
+}
+
+#reddy-page .rp-logo-name{
+    position:absolute;
+
+    left:0;
+    right:0;
+
+    bottom:43px;
+
+    width:100%;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+    font-family:Arial,sans-serif;
+
+    font-size:25px;
+
+    line-height:1;
+
+    font-weight:1000;
+
+    letter-spacing:2px;
+
+    color:#ffe900;
+
+    text-shadow:
+        2px 3px 0 #b78d00;
+}
+
+#reddy-page .rp-logo-sub{
+    position:absolute;
+
+    left:0;
+    right:0;
+
+    bottom:25px;
+
+    width:100%;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+    color:#ffe900;
+
+    font-size:7px;
+
+    line-height:1;
+
+    font-weight:800;
+
+    letter-spacing:.7px;
+}
+
+@keyframes rpLogoFloat{
+
+    0%,
+    100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+#reddy-page .rp-container{
+    width:100%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:
+        0 25px 85px;
+}
+
+/* =====================================================
+   STATS
+===================================================== */
+
+#reddy-page .rp-stats{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    overflow:hidden;
+
+    border:
+        1px solid rgba(255,255,255,.09);
+
+    border-radius:20px;
+
+    background:#0a0f0d;
+}
+
+#reddy-page .rp-stat{
+    padding:25px 10px;
+
+    text-align:center;
+
+    border-right:
+        1px solid rgba(255,255,255,.08);
+}
+
+#reddy-page .rp-stat:last-child{
+    border-right:0;
+}
+
+#reddy-page .rp-stat strong{
+    display:block;
+
+    font-size:23px;
+}
+
+#reddy-page .rp-stat span{
+    display:block;
+
+    margin-top:6px;
+
+    color:#7d8782;
+
+    font-size:11px;
+}
+
+/* =====================================================
+   PANELS
+===================================================== */
+
+#reddy-page .rp-panel{
+    margin-top:22px;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    border:
+        1px solid rgba(255,255,255,.09);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.012)
+        );
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.35);
+}
+
+#reddy-page .rp-heading{
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:800;
+}
+
+#reddy-page .rp-line{
+    width:48px;
+
+    height:3px;
+
+    margin:15px 0 23px;
+
+    background:#19d783;
+
+    border-radius:10px;
+}
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+#reddy-page .rp-features{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:14px;
+}
+
+#reddy-page .rp-feature{
+    padding:22px;
+
+    border-radius:18px;
+
+    background:#080b09;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    transition:
+        transform .25s,
+        border-color .25s;
+}
+
+#reddy-page .rp-feature:hover{
+    transform:translateY(-5px);
+
+    border-color:
+        rgba(25,215,131,.38);
+}
+
+#reddy-page .rp-icon{
+    font-size:25px;
+
+    color:#19d783;
+
+    margin-bottom:13px;
+}
+
+#reddy-page .rp-feature strong{
+    font-size:16px;
+}
+
+#reddy-page .rp-feature p{
+    margin:8px 0 0;
+
+    color:#8d9691;
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+/* =====================================================
+   FINAL DOWNLOAD
+===================================================== */
+
+#reddy-page .rp-final{
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            rgba(11,150,90,.20),
+            transparent 65%
+        );
+}
+
+#reddy-page .rp-final .rp-line{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#reddy-page .rp-final p{
+    color:#919a95;
+
+    font-size:14px;
+
+    line-height:1.7;
+}
+
+/* =====================================================
+   MOBILE STICKY
+===================================================== */
+
+#reddy-page .rp-sticky{
+    display:none;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+#reddy-page .rp-footer{
+    text-align:center;
+
+    padding:25px;
+
+    color:#69716c;
+
+    font-size:11px;
+
+    border-top:
+        1px solid rgba(255,255,255,.08);
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:800px){
+
+    #reddy-page .rp-nav{
+        padding:0 18px;
+    }
+
+    #reddy-page .rp-hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        padding:
+            48px 18px 50px;
+
+        gap:45px;
+    }
+
+    #reddy-page .rp-title{
+
+        font-size:48px;
+
+        letter-spacing:-2px;
+    }
+
+    #reddy-page .rp-description{
+
+        margin:auto;
+
+        font-size:15px;
+
+        text-align:center;
+    }
+
+    #reddy-page .rp-download{
+
+        width:100%;
+
+        margin-left:auto;
+
+        margin-right:auto;
+    }
+
+    #reddy-page .rp-logo{
+
+        width:175px;
+        height:175px;
+    }
+
+    #reddy-page .rp-container{
+
+        padding:
+            0 12px 100px;
+    }
+
+    #reddy-page .rp-stats{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    #reddy-page .rp-stat{
+
+        border-bottom:
+            1px solid rgba(255,255,255,.08);
+    }
+
+    #reddy-page .rp-stat:nth-child(2){
+
+        border-right:0;
+    }
+
+    #reddy-page .rp-features{
+
+        grid-template-columns:1fr;
+    }
+
+    #reddy-page .rp-panel{
+
+        padding:22px;
+
+        border-radius:20px;
+    }
+
+    #reddy-page .rp-sticky{
+
+        display:block;
+
+        position:fixed;
+
+        left:0;
+        right:0;
+        bottom:0;
+
+        padding:10px 13px;
+
+        background:
+            rgba(5,8,7,.96);
+
+        backdrop-filter:blur(18px);
+
+        border-top:
+            1px solid rgba(255,255,255,.12);
+
+        z-index:999999;
+    }
+
+    #reddy-page .rp-sticky .rp-download{
+
+        width:100%;
+
+        min-height:58px;
+
+        margin:0;
+
+        font-size:16px;
+    }
+
+}
+</style>
+
+
+<!-- =====================================================
+     NAV
+===================================================== -->
+
+<div class="rp-nav">
+
+    <div class="rp-brand">
+
+        <span class="rp-brand-r">
+            R
+        </span>
+
+        REDDY
 
     </div>
-<div style="text-align:center; margin-top:18px; font-size:16px; color:#ffffff;">
-    Ads managed by
-    <a href="https://telegram.me/+LiETHEERYtgzNjU1"
-       target="_blank"
-       style="color:#FFEB3B; text-decoration:none; font-weight:bold;">
-        APEagency
+
+
+    <a
+        class="rp-nav-download"
+        href="https://www.rdyy.in/rdyy.apk"
+    >
+        DOWNLOAD APP
     </a>
+
 </div>
-    <!-- Clock Operational Logic -->
-    <script>
-        let countdownSec = 30;
-        const clockElement = document.getElementById('reg-timer');
 
-        const activeClock = setInterval(() => {
-            countdownSec--;
-            let mins = Math.floor(countdownSec / 60);
-            let secs = countdownSec % 60;
 
-            mins = mins < 10 ? '0' + mins : mins;
-            secs = secs < 10 ? '0' + secs : secs;
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-            clockElement.textContent = `${mins}:${secs}`;
+<section class="rp-hero">
 
-            if (countdownSec <= 0) {
-                clearInterval(activeClock);
-                clockElement.textContent = "00:00";
-                clockElement.style.color = "#8be0d4"; /* Safely stops without redirect */
-            }
-        }, 1000);
-    </script>
 
-</body>
-</html>			
+    <div>
+
+        <div class="rp-badge">
+
+            ✦ PREMIUM ANDROID EXPERIENCE
+
+        </div>
+
+
+        <h1 class="rp-title">
+
+            Welcome to<br>
+
+            <span>REDDY</span>.
+
+        </h1>
+
+
+        <p class="rp-description">
+
+            Experience a modern, responsive and
+            premium Android application designed
+            with a clean interface and smooth
+            performance.
+
+        </p>
+
+
+        <!-- DOWNLOAD BUTTON -->
+
+        <a
+            class="rp-download"
+            href="https://www.rdyy.in/rdyy.apk"
+        >
+
+            <span class="rp-arrow">
+                ↓
+            </span>
+
+
+            <span class="rp-button-text">
+
+                DOWNLOAD REDDY
+
+                <small>
+                    ANDROID APK • LATEST VERSION
+                </small>
+
+            </span>
+
+        </a>
+
+    </div>
+
+
+    <!-- =================================================
+         PREMIUM CSS LOGO
+    ================================================= -->
+
+    <div class="rp-logo-area">
+
+        <div class="rp-logo-glow"></div>
+
+
+        <div class="rp-logo">
+
+            <div class="rp-logo-r">
+                R
+            </div>
+
+
+            <div class="rp-logo-name">
+                REDDY
+            </div>
+
+
+            <div class="rp-logo-sub">
+                PREMIUM ANDROID APP
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<div class="rp-container">
+
+
+    <!-- STATS -->
+
+    <div class="rp-stats">
+
+        <div class="rp-stat">
+
+            <strong>
+                4.5 ★
+            </strong>
+
+            <span>
+                APP RATING
+            </span>
+
+        </div>
+
+
+        <div class="rp-stat">
+
+            <strong>
+                12 MB
+            </strong>
+
+            <span>
+                APP SIZE
+            </span>
+
+        </div>
+
+
+        <div class="rp-stat">
+
+            <strong>
+                1M+
+            </strong>
+
+            <span>
+                DOWNLOADS
+            </span>
+
+        </div>
+
+
+        <div class="rp-stat">
+
+            <strong>
+                Android
+            </strong>
+
+            <span>
+                OPTIMIZED
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- FEATURES -->
+
+    <section class="rp-panel">
+
+        <h2 class="rp-heading">
+            Premium Experience
+        </h2>
+
+        <div class="rp-line"></div>
+
+
+        <div class="rp-features">
+
+
+            <div class="rp-feature">
+
+                <div class="rp-icon">
+                    ⚡
+                </div>
+
+                <strong>
+                    Fast & Smooth
+                </strong>
+
+                <p>
+                    Responsive navigation with
+                    a clean mobile-first interface.
+                </p>
+
+            </div>
+
+
+            <div class="rp-feature">
+
+                <div class="rp-icon">
+                    ◆
+                </div>
+
+                <strong>
+                    Luxury Design
+                </strong>
+
+                <p>
+                    Premium dark visuals with
+                    elegant green highlights.
+                </p>
+
+            </div>
+
+
+            <div class="rp-feature">
+
+                <div class="rp-icon">
+                    ◉
+                </div>
+
+                <strong>
+                    Android Ready
+                </strong>
+
+                <p>
+                    Optimized for modern Android
+                    phones and mobile screens.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="rp-panel">
+
+        <h2 class="rp-heading">
+            About REDDY
+        </h2>
+
+        <div class="rp-line"></div>
+
+
+        <p style="
+            color:#969f9a;
+            line-height:1.8;
+            font-size:14px;
+            margin:0;
+            text-align:left;
+        ">
+
+            REDDY is a modern Android application
+            built around a simple, responsive and
+            premium mobile experience.
+
+        </p>
+
+    </section>
+
+
+    <!-- FINAL DOWNLOAD -->
+
+    <section class="rp-panel rp-final">
+
+        <h2 class="rp-heading">
+            Get REDDY on your phone
+        </h2>
+
+
+        <div class="rp-line"></div>
+
+
+        <p>
+            Tap the button below to download
+            the latest Android APK.
+        </p>
+
+
+        <a
+            class="rp-download"
+            href="https://www.rdyy.in/rdyy.apk"
+        >
+
+            <span class="rp-arrow">
+                ↓
+            </span>
+
+
+            <span class="rp-button-text">
+
+                DOWNLOAD NOW
+
+                <small>
+                    DIRECT ANDROID APK
+                </small>
+
+            </span>
+
+        </a>
+
+    </section>
+
+
+</div>
+
+
+<!-- =====================================================
+     MOBILE STICKY DOWNLOAD
+===================================================== -->
+
+<div class="rp-sticky">
+
+    <a
+        class="rp-download"
+        href="https://www.rdyy.in/rdyy.apk"
+    >
+
+        <span class="rp-arrow">
+            ↓
+        </span>
+
+
+        <span class="rp-button-text">
+
+            DOWNLOAD REDDY
+
+            <small>
+                ANDROID APK
+            </small>
+
+        </span>
+
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<div class="rp-footer">
+
+    ©️ 2026 REDDY · Premium Android App
+
+</div>
+
+
+</div>
